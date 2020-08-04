@@ -4,7 +4,7 @@
 # system version。spring boot版本为1的话则配置2，否则配置3。
 SYSTEM_V=3
 # 是否需要解密。0为不需要解密，1为需要解密
-ENCRYPT=0
+ENCRYPT=1
 # 自定义临时文件夹路径。不允许使用系统默认的临时文件夹，会导致spring boot启动时创建的tomcat文件夹被删除而无法上传文件。如果没配置，则默认会在bin文件夹同级目录创建一个temp文件夹。
 TMP_DIR=""
 # 自定义java_home
@@ -12,11 +12,11 @@ MY_JAVA_HOME="D:\Program Files\Java\jdk1.8.0_121"
 # 当前IP
 CURRENT_IP=localhost
 # eureka所在的IP
-EUREKA_IP=192.168.111.101
+EUREKA_IP=localhost
 # eureka的端口
 EUREKA_PORT=8761
 # 配置中心所在的IP
-CONFIG_CENTER_IP=192.168.111.101
+CONFIG_CENTER_IP=localhost
 # 配置中心的端口
 CONFIG_CENTER_PORT=8888
 # 微服务使用的配置中心文件
